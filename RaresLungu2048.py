@@ -159,7 +159,7 @@ def better_random_rollout(board, rounds):
         board.grid.append(copy2)
     board.score = scores[0]
     board.merge_count = scores[1]
-return retscore
+    return retscore
 
 
 def check_move(center, adjacent):
