@@ -82,7 +82,7 @@ def check_move(center, adjacent):
 def play_random_game(board):
     firstMove = random.choice(better_possible_moves(board))
     board.make_move(firstMove)
-    score = board.better_random_rollout(board, 10)
+    score = better_random_rollout(board, 10)
     return [firstMove, score]
 
 def determine_next_move(board):
